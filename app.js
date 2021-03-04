@@ -40,4 +40,14 @@ console.table(twoDemo);
 
 //BONUS write a script to check if LBJ was a 2 term president. IF he was then alert("LBJ served two terms") else alert "LBJ was one and done"
 
+const LBJ = presidents
+  .filter((president) => president.name === "Lyndon Johnson")
+  .filter(function (president) {
+    if (president.terms === 2) {
+      return `LBJ served two terms`;
+    } else {
+      return `LBJ was one and done`;
+    }
+  });
+console.log(LBJ);
 //i wont even get a cupcake even if i got it :(
